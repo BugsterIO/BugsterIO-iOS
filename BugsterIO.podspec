@@ -32,4 +32,5 @@ Pod::Spec.new do |s|
 
   s.xcconfig = { 'LIBRARY_SEARCH_PATHS' => '$(PODS_ROOT)/BugsterIO' }    
   s.frameworks = 'UIKit', 'CoreGraphics'
+  s.resources = "BugsterIO.bundle"
 end
