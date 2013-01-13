@@ -22,15 +22,17 @@ Pod::Spec.new do |s|
               https://github.com/BugsterIO/BugsterIO-iOS
     LICENSE
   }
+
   s.platform = :ios, '5.0'
   s.author       = { "Vincent Coste" => "coste.vincent@gmail.com" }
   s.source       = { :git => "https://github.com/BugsterIO/BugsterIO-iOS.git", :branch => '0.8' }
   s.source_files = '*.h'
   s.preserve_paths = 'libBugsterIO.a'
-  s.library = 'libBugsterIO.a'
-  s.ios.dependency 'AFNetworking'
-
-  s.xcconfig = { 'LIBRARY_SEARCH_PATHS' => '$(PODS_ROOT)/BugsterIO' }    
-  s.frameworks = 'UIKit', 'CoreGraphics'
+  s.library = 'BugsterIO'
+  
   s.resources = "BugsterIO.bundle"
+  s.xcconfig = { 'LIBRARY_SEARCH_PATHS' => '$(PODS_ROOT)/BugsterIO' }
+
+  s.frameworks = 'UIKit', 'CoreGraphics'
+  s.ios.dependency 'AFNetworking'
 end
