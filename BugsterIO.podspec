@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/BugsterIO/BugsterIO-iOS.git", :branch => '0.8' }
   s.source_files = '*.h'
   s.preserve_paths = 'libBugsterIO.a'
-  s.library = 'libBugsterIO'
+  s.library = 'Bugster'
   
   s.resources = "BugsterIO.bundle"
   s.xcconfig = { 'LIBRARY_SEARCH_PATHS' => '$(PODS_ROOT)/BugsterIO' }
