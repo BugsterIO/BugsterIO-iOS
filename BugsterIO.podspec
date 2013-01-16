@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "BugsterIO"
-  s.version      = "0.8"
+  s.version      = "0.9"
   s.summary      = "Reporting UI mobile bugs has never been easier."
   s.homepage     = "https://github.com/BugsterIO/BugsterIO-iOS"
 
@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 
   s.platform = :ios, '5.0'
   s.author       = { "Vincent Coste" => "coste.vincent@gmail.com" }
-  s.source       = { :git => "https://github.com/BugsterIO/BugsterIO-iOS.git", :branch => '0.8' }
+  s.source       = { :git => "https://github.com/BugsterIO/BugsterIO-iOS.git", :branch => '0.9' }
   s.source_files = '*.h'
   s.preserve_paths = 'libBugsterIO.a'
   s.library = 'BugsterIO'
